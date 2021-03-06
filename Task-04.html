@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Напишите программу на JavaScript, чтобы определить, является ли данный год високосным в григорианском календаре.</p>
+    <script>
+        let date = new Date()
+        let year = date.getFullYear()
+        if (year % 4 == 0){
+            document.write(
+                `
+                Visokosniy god
+                `
+            )
+        }
+        else{
+            document.write(
+                `
+                God ne visokosniy
+                `
+            )
+        }
+    </script>
+</body>
+</html>

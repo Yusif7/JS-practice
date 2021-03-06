@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Напишите программу на JavaScript, чтобы проверить, заканчивается ли строка словом «Script». 
+        Длина строки должна быть больше или равна 6.
+    </p>
+    <script>
+        const check = (str, find) => {
+            let findLen = find.length;
+            let start = str.length - findLen
+            let j = 0
+            for(let i = start; i < str.length; i++){
+                if(find[j++] == str[i]){
+                    return true
+                }
+            }
+            return false
+        }
+        console.log(check('Javascript', 'fcript'))
+    </script>
+</body>
+</html>

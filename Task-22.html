@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Напишите программу на JavaScript для преобразования заданного числа в часы и минуты.
+    </p>
+    <script>
+        let num = 767;
+        let hour = 0;
+        let minute = 0;
+        while(num > 0){
+            if (num%60 == 0){
+                hour = num/60
+                break
+            }
+            minute++
+            num--
+        }
+        document.write(hour + ' hour ' + minute + ' minutes')
+    </script>
+</body>
+</html>

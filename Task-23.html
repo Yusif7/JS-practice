@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>
+        Напишите программу на JavaScript, чтобы переместить последние три символа в начало заданной строки. Длина строки должна быть больше или равна трем
+    </p>
+    <script>
+        const cut = (str,num) => {
+            let len = str.length - num
+            let result = ''
+            for(let i = len; i < str.length; i++){
+                result += str[i]
+            }
+            return result
+        }
+
+        let word = 'Javascript';
+        let num = 3
+        console.log(cut(word, num) + word)
+    </script>
+</body>
+</html>
