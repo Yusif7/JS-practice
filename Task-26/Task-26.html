@@ -11,19 +11,8 @@
         Напишите программу на JavaScript, чтобы проверить, заканчивается ли строка словом «Script». 
         Длина строки должна быть больше или равна 6.
     </p>
-    <script>
-        const check = (str, find) => {
-            let findLen = find.length;
-            let start = str.length - findLen
-            let j = 0
-            for(let i = start; i < str.length; i++){
-                if(find[j++] == str[i]){
-                    return true
-                }
-            }
-            return false
-        }
-        console.log(check('Javascript', 'fcript'))
+    <script src="js.js">
+
     </script>
 </body>
 </html>
