@@ -10,18 +10,8 @@
     <p>Напишите программу на JavaScript, где программа принимает случайное целое число от 1 до 10, 
         затем пользователю предлагается ввести число угадывания. Если пользовательский ввод совпадает с номером угадывания, 
         программа отобразит сообщение «Хорошая работа», в противном случае отобразится сообщение «Не найдено».</p>
-    <script>
-        let ran = Math.floor(Math.random() * (10 - 1)) + 1;
-        let input = Math.floor(Math.random() * (10 - 1)) + 1;
-        if (input <= 0 || input > 10){
-            document.write('Incorrect input')
-        }
-        else if(input  == ran){
-            document.write('Correct')
-        }
-        else{
-            document.write('Error')
-        }
+    <script src="js.js">
+
     </script>
 </body>
 </html>
