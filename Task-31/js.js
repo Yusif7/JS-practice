@@ -11,7 +11,6 @@ const difference = (arr) =>{
     for(let j = 0; j < arr.length; j++){
         if(arr[j] - arr[j+1] > 0 && arr[j] - arr[j+1] > min){
             min1 = (arr[j] - arr[j+1])
-            //console.log(min1)
         }
     }
     if(min < 0 && min*(-1) > min1)
