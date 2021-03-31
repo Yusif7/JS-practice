@@ -59,7 +59,6 @@ document.addEventListener('DOMContentLoaded', () => {
     let cardChosen = []
         // Data-id kartinki
     let cardChosenId = []
-
     const createBoard = () => {
         for (let i = 0; i < cardArray.length; i++) {
             //Sozdayem tag img
@@ -87,7 +86,6 @@ document.addEventListener('DOMContentLoaded', () => {
             grid.appendChild(card)
         }
     }
-
     const checkForMatch = () => {
         // Vibirayutsa vse elementi
         let cards = document.querySelectorAll('img')
@@ -117,8 +115,5 @@ document.addEventListener('DOMContentLoaded', () => {
             result.textContent = 'Tebrikler! Butun sekiller tapildi'
         }
     }
-
     createBoard()
-
-
 })
