@@ -10,12 +10,14 @@ const board = () => {
         area.setAttribute('data-n', i)
         gameBoard.appendChild(area);
     }
+    /* Position X teyin et */
     for (let i = 0; i < 10; i++) {
         let x = document.createElement('div');
         x.classList.add('x');
         x.innerText = arrayX[i];
         posX.appendChild(x);
     }
+    /* Position Y teyin et */
     for (let i = 0; i < 10; i++) {
         let y = document.createElement('div');
         y.classList.add('y');
@@ -110,7 +112,7 @@ const shoot = () => {
         })
         let check = checkEndOfGame();
         if (check == 0) {
-            document.querySelector('.game-over').innerText = 'Game Over';
+            document.querySelector('.game-over').innerText = 'Dusmen gemileri mehf edildi';
             return 0
         }
     })
