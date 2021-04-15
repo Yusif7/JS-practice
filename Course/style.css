@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+body {
+    background-color: #F7F9F9;
+}
+
+::-webkit-input-placeholder {
+    color: #6C757D;
+}
+
+.pos-rel {
+    position: relative;
+    width: 97%;
+}
+
+input {
+    border: 3px solid #A76D60;
+    padding: 5px 10px 5px 10px;
+    outline: none;
+    width: 96.4% !important;
+    margin-left: 36px;
+}
+
+input:focus {
+    color: #495057;
+    background-color: #fff;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+    transition: all 0.4s ease 0s;
+}
+
+button {
+    width: 100%;
+    padding: 5px 10px 5px 10px;
+    border-radius: 5px;
+    border: 3px solid #D9CCC7;
+    outline: none;
+    background: transparent;
+    color: #D9CCC7;
+    transition: all 0.8s ease-in 0s;
+    cursor: auto;
+}
+
+button:hover {
+    background-color: #D9CCC7;
+    color: white;
+    transition: all 0.8s ease-in 0s;
+    cursor: auto;
+}
+
+form div {
+    width: 42px;
+    height: 40px;
+    background-color: #A76D60;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.customer-icon {
+    position: absolute;
+    top: 0;
+    left: 0%;
+}
+
+.course-icon {
+    position: absolute;
+    top: 27%;
+    left: 0%;
+}
+
+.author-icon {
+    position: absolute;
+    left: 0%;
+    top: 54%;
+}
+
+figure {
+    width: 316px;
+    height: 237px;
+}
+
+img {
+    width: 286px;
+    height: 237px;
+    object-fit: contain;
+}
+
+.course-name,
+.course-describe,
+.course-author {
+    font-size: 12px;
+    background-color: yellow;
+    padding: 2px 4px;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.course-describe {
+    background-color: green;
+    color: white;
+}
+
+.course-author {
+    background-color: red;
+    color: white;
+}
+
+.calculate {
+    background-color: #D4EDDA;
+    padding: 5px 0px;
+    text-align: center;
+}
+
+.name-content,
+.course-content,
+.author-content {
+    font-weight: bold;
+    display: block;
+    margin-top: 8px;
+}
+
+.empty {
+    border: 3px solid red;
+}
+
+.error {
+    background-color: red;
+    color: black;
+}
+
+.w-40p {
+    width: 40%;
+}
+
+.loading {
+    display: none;
+}
+
+.calculate {
+    display: none;
+    width: 97%;
+}
