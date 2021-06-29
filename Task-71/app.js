@@ -8,7 +8,7 @@ rəqəmlərinin cəmi 10-dan kiçik olanları tapsın
 2 rəqəmli ədədləri tapsın
 */
 
-let result = [];
+
 const sumFunc = (num, result) => {
     let count = 0;
     let str = String(num);
